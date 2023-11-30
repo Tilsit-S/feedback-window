@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="Description" content="Feedback" />
+        <title>Feedback</title>
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
+    <body>
+       
+        <main class="main">
+            <form class="form form__content">
+
+                <div class="form__feedback">
+                    <h2 class="form__title">Связаться с нами</h2>
+                    <p class="form__description">Если у вас есть вопросы, заполните эту контактную форму. Спасибо!</p>
+                </div>
+
+                <div class="form__info">
+                    <div class="form__user-data">
+                        <label class="form__user-title">Полное имя</label>
+                        
+                        <div class="form__info-wrapper">
+                            <div class="input-wrapper form__info-name error">
+                                <input type="text" id="name" placeholder="Имя" required/>
+                                <span class="valid-pseudo"></span>
+                                <div class="invalid">Введите имя</div>
+                            </div>
+                            <div class="input-wrapper form__info-surname valid">
+                                <input type="text" id="surname" placeholder="Фамилия" required/>
+                                <span class="valid-pseudo"></span>
+                                <div class="invalid">Введите фамилию</div>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                    <div class="form__adress">
+                        <label class="form__adress-title">Адрес</label>
+                        
+                        <div class="form__adress-wrapper">
+                            
+                            <div class="input-wrapper form__adress-city">
+                                <input type="text" id="city" placeholder="Город" required/>
+                                <span class="valid-pseudo"></span>
+                                <div class="invalid">Введите город</div>
+                            </div>
+
+                            <div class="input-wrapper form__adress-street">
+                                <input type="text" id="street" placeholder="Улица" required/>
+                                <span class="valid-pseudo"></span>
+                                <div class="invalid">Введите улицу</div>
+                            </div>
+
+                            <div class="input-wrapper form__adress-home error">
+                                <input type="text" id="home" placeholder="Дом" required/>
+                                <span class="valid-pseudo"></span>
+                                <div class="invalid">Введите № дома</div>
+                            </div>
+                            
+                            <div class="input-wrapper form__adress-flat valid">
+                                <input type="text" id="flat" placeholder="Квартира"/>
+                                <span class="valid-pseudo"></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="form__contacts">
+                        <label class="form__contacts-title">Контактная информация</label>
+                        
+                        <div class="form__info-wrapper">
+
+                            <div class="input-wrapper form__info-email valid">
+                                <input type="email" id="email" placeholder="Email*" required/>
+                                <span class="valid-pseudo"></span>
+                                <div class="invalid">Введите ваш E-mail</div>
+                            </div>
+
+                            <div class="input-wrapper form__info-tel error">
+                                <input type="tel" id="tel" placeholder="Телефон" required/>
+                                <span class="valid-pseudo"></span>
+                                <div class="invalid">Введите ваш телефон</div>
+                            </div>
+
+                        </div>
+                    </div>
+    
+                    <div class="form__questions error">
+                        <label class="form__questions-title">Вопросы / комментарии</label>
+                        <textarea class="form__questions-field" rows="5" placeholder="Сообщение"></textarea>
+
+                        <div class="form__control-wrapper">
+                            <p class="form__reminder">Не более 200 символов</p>
+                            <p class="form__text-counter"><span class="form__counter-current">0</span> / <span class="form__counter-max"></span></p>
+                        </div>
+
+                    </div>
+
+                    
+    
+                    <div class="input-wrapper form__notification">
+                        <input type="checkbox" id="notification"/>
+                        <p class="form__checkbox-description">Сообщать о специальных предложениях по электронной почте</p>
+                    </div>
+                    
+                    <button type="submit" class="form__button btn-error">Отправить</button>
+                    
+                </div>
+                
+            </form>
+        </main>
+
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+.input-wrapper {
+    position: relative;
+    width: 48%;
+    width: auto;
+
+    &:focus {
+        box-shadow:0px 0px 0px 1px #c0dbfe;
+        background-color: #f4fafb;
+    }
+
+    .invalid {
+        visibility: hidden;
+    }
+    
+    &.error {
+
+        .invalid {
+            visibility: visible;
+            display: block;
+            font-size: 11px;
+            margin-top: 10px;
+            color: red;
+        }
+
+        input {
+            box-shadow:0px 0px 0px 1px #ef4c4c;
+        }
+    }
+
+    &.valid {
+
+        .valid-pseudo {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 8px;
+                right: 16px;
+                content: "";
+                display: block;
+                width: 2px;
+                height: 5px;
+                transform: rotate(128deg);
+                background-color: #4cef7d;
+            }
+
+            &::after {
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                content: "";
+                display: block;
+                width: 2px;
+                height: 10px;
+                transform: rotate(45deg);
+                background-color: #4cef7d;
+            }
+        }
+
+        .invalid {
+            visibility: hidden;
+        }
+
+        input {
+            position: relative;
+            box-shadow:0px 0px 0px 1px #4cef7d;
+            background-color: #f6fffe;
+        }
+    }
+}
